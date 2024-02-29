@@ -1,0 +1,257 @@
+/*Hero Section*/
+#Hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(237deg, #000000, #4e0090, #924dcc);
+    background-size: 600% 600%;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+
+    -webkit-animation: hero-bg 18s ease infinite;
+    -moz-animation: hero-bg 18s ease infinite;
+    animation: hero-bg 18s ease infinite;
+    overflow: hidden;
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.Hero-Name {
+    color:white;
+    font-size: 150px;
+}
+
+.Hero-Im {
+    color:white;
+}
+
+.text-hero {
+    color:white;
+}
+
+
+
+/*Background for Hero*/
+
+@-webkit-keyframes hero-bg {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+@-moz-keyframes hero-bg {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+@keyframes hero-bg {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  #Hero .air{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+    background-size: 1000px 100px
+  }
+  #Herp .air.air1{
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  #Hero .air.air2{
+    animation: wave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  #Hero .air.air3{
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  #Hero .air.air4{
+    animation: wave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+  @keyframes wave{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: 1000px; 
+    }
+  }
+  @keyframes wave2{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: -1000px; 
+    }
+  }
+
+
+/*Resume Section*/
+#Resume {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.res-tit1 {
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.res-tit2 {
+  font-size:40px;
+  font-weight: bold;
+  background: linear-gradient(to right, #a600ff, 
+  #902cb2, #4800ff); 
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.res-txt {
+  font-size: 25px;
+  list-style-type:none;
+  text-align:center;
+}
+
+/*Projects*/
+.link-pro {
+  text-decoration: none;
+}
+
+/*About Section*/
+#About {
+    height:100vh;
+} 
+
+/*Contact Section*/
+#Contact {
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    background-color: rgb(237, 237, 237);
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.con-btn1 {
+  font-weight:bold;
+  font-size:100px
+}
+
+/*Animations*/
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.attention {
+  animation: 3s 2s myAnim ease-out;
+}
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateY(-8px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateY(8px);
+	}
+
+	80% {
+		transform: translateY(6.4px);
+	}
+
+	90% {
+		transform: translateY(-6.4px);
+	}
+}
+
+.lineUp {
+  animation: 3s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/*Footer*/
+#Footer {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 480px) {
+  .con-btn1 {
+    font-weight:bold;
+    font-size:100px
+  }
+}
