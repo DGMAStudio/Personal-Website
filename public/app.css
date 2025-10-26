@@ -1,0 +1,339 @@
+/*#2B4162*/
+
+:root {
+  --main: #EDE6E3;
+  --second: #36382E;
+  --third:#5BC3EB;
+  --fourth:#F06449;
+  --third-hover:#2188b1;
+
+  --font-family: "Fjalla One", sans-serif;
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+/*GLOBAL STYLING*/
+
+
+/*HERO SECTION STYLING*/
+
+#hero {
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  background-color: var(--main);
+  padding:50px;
+}
+
+.hero_card {
+  display: block;
+  text-align: center;
+}
+
+.hero_image {
+  border-radius: 50%;
+  box-shadow:
+  0 4px 12px rgba(0, 0, 0, 0.15),
+  0 8px 24px rgba(58, 192, 242, 0.15);
+  margin-bottom:20px;
+  border:10px solid var(--third);
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+  will-change: transform;
+}
+
+.hero_image:hover {
+  transform: scale(1.05);
+}
+
+.hero_header {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size:9rem;
+  text-shadow: var(--text-shadow);
+  margin-bottom: 20px;
+}
+
+.hero_buttons {
+  display:flex;
+  justify-content: space-between;
+}
+
+.hero_button {
+  font-family: var(--font-family);
+  text-decoration: none;
+  padding:10px;
+  font-size:2.5rem;
+  border-radius: 40px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  box-shadow: var(--box-shadow);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:5rem;
+  width:25rem;
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+  will-change: transform;
+}
+
+.hero_button:hover {
+  transform: scale(1.07);
+}
+
+.work_button {
+    border:3px solid var(--fourth);
+    color:var(--fourth);
+}
+
+.work_button:hover {
+  color:var(--main);
+  background-color: var(--fourth);
+}
+
+.contact_button {
+  color:var(--main);
+  background-color: var(--third);
+  border:3px solid var(--third);
+}
+
+.contact_button:hover {
+  background-color: var(--third-hover);
+  border-color:var(--third-hover);
+}
+
+/*MY WORK SECTION STYLING*/
+
+#work {
+  min-height:100vh;
+  padding:50px;
+}
+
+.work_heading {
+  font-family: var(--font-family);
+  font-weight: bold;
+  text-align: center;
+  font-size: 4rem;
+  color:var(--fourth);
+  text-shadow: var(--text-shadow);
+}
+
+.work_cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work_card {
+  box-shadow: var(--box-shadow);
+  padding:10px;
+  margin:20px;
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+  will-change: transform;
+}
+
+.work_card:hover {
+ transform: scale(1.07);
+}
+
+.card-header {
+  font-family: var(--font-family);
+}
+
+.card-title {
+  font-family: var(--font-family);
+  font-weight:bold;
+  letter-spacing: 2px;
+}
+
+.card-h-header {
+  color:var(--fourth);
+}
+
+
+.work_link_button {
+  color:var(--main);
+  background-color: var(--third);
+  border:3px solid var(--third);
+  font-family: var(--font-family);
+  text-decoration: none;
+  padding:10px;
+  border-radius: 40px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  box-shadow: var(--box-shadow);
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+  will-change: transform;
+}
+
+.work_link_button:hover {
+  background-color: var(--third-hover);
+  border-color:var(--third-hover);
+  transform: scale(1.07);
+}
+
+/*UNIVERSITY SECTION STYLING*/
+
+#studies {
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+.studies_title {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 6rem;
+  margin-top:30px;
+  color: var(--third);
+  text-shadow: var(--text-shadow);
+}
+
+.studies_img {
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+}
+
+.studies_par {
+  font-size: 30px;
+}
+
+/* SKILLS SECTION */
+
+#skills {
+  padding: 3rem 1rem;
+  background: whitesmoke;
+  text-align: center;
+  text-shadow: var(--text-shadow);
+}
+
+.skills_content { 
+  max-width: 1100px; 
+  margin: 0 auto; 
+}
+
+.skills_heading {
+  font-family: var(--font-family);
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: clamp(2rem, 3.5vw, 4rem);
+  margin: 0 0 1rem;
+}
+
+.allskills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 24px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.skill_card {
+  display: grid;
+  place-items: center;
+}
+
+.skill_logo {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  display: block;
+}
+
+
+/*CONTACT SECTION STYLING*/
+
+#contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, var(--third), var(--fourth));
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Frosted content box */
+.contact_content {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 3rem 4rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  color: white;
+}
+
+.contact_content:hover {
+  transform: scale(1.05);
+}
+
+.contact_content h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  font-family: var(--font-family);
+}
+
+/* Button layout */
+.contact_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Base button style */
+.contact_btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50px;
+  padding: 0.75rem 1.75rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* SVG icons inside buttons */
+.contact_btn svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+/* Hover animation */
+.contact_btn:hover {
+  transform: translateY(-4px);
+  background: white;
+  color: #333;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+/* Color accents for each platform */
+.email_btn:hover { color: #d93025; }
+.linkedin_btn:hover { color: #0a66c2; }
+.ig_btn:hover { color: #e1306c; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact_content { padding: 2rem; }
+  .contact_content h1 { font-size: 2.2rem; }
+  .contact_btn { padding: 0.6rem 1.2rem; gap: 0.5rem; }
+  .contact_btn svg { width: 20px; height: 20px; }
+}
